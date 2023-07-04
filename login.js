@@ -7,6 +7,16 @@ function Verificar(){
     if(!user || !senha){
         alert("Campos de preenchimento obrigatorio. Favor preencher!");
     } else{
-        alert("Campos preenchidos com sucesso!");
+        window.location.href = "aula2.html";
+    };
+};
+
+var dadosLista = [];
+
+const salvaUser = () => {
+    let nomeUser =  $('#nomeUser').val();
+    if (nomeUser) {
+        dadosLista.push(nomeUser);
+        console.log(dadosLista);
     };
 };
