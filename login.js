@@ -56,4 +56,6 @@ const editarUsuer = (i) => {
 const removerUser = (i) => {
     document.querySelector('#nomeUser').value = dadosLista[(i - 1)];
     dadosLista.splice(dadosLista[(i - 1), 1]);
+    criaLista();
+    countUsers();
 };
